@@ -44,6 +44,7 @@ h1 {
 
 .message-box {
   color: #ddd;
+  font-size: 0.5rem;
 }
 
 #submit-button {
