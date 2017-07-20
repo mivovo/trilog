@@ -1,4 +1,4 @@
-const date = Date().slice(4, 15)
+const currentDate = Date().slice(4, 15)
 
 let width
 let height
@@ -171,7 +171,7 @@ const sync = (submitting = false) => {
 
   if (submitting) {
     // Set up the object for this submission
-    const submission = { r: r, g: g, b: b, date: date}
+    const submission = { r: r, g: g, b: b, date: currentDate}
 
     // If there's already data, use that first
     if (currentData) {
@@ -180,7 +180,7 @@ const sync = (submitting = false) => {
 
     // If there already was a submission today, replace it
     let latest = stack.length - 1
-    if (stack[latest] && stack[latest].date === date) {
+    if (stack[latest] && stack[latest].date === currentDate) {
       stack[latest] = submission
 
     // Otherwise, push it onto the stack
@@ -299,5 +299,5 @@ document.addEventListener('touchstart', e => {
 /**
  * Initialize
  */
-document.getElementById('date').innerHTML = date
+document.getElementById('date').innerHTML = currentDate
 init()
