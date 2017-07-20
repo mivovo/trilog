@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Overpass Mono', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem 2rem;
+  margin-top: -10vw;
+}
+
+.bottom div {
+  width: 5vw;
+  text-align: center;
+}
+
+.message-box {
+  color: #ddd;
+}
+
+#submit-button {
+  display: inline-block;
+  width: 15rem;
+  padding: 1rem 3rem;
+  background: #fff;
+  color: #000;
+  border-right: 3px solid #ddd;
+  border-bottom: 3px solid #333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#submit-button:active {
+  position: relative;
+  top: 1px;
+  background: #fafafa;
+  border-bottom-width: 2px;
+}
+
+.corner-button {
+  cursor: pointer;
+  padding: 3rem;
+  margin: -3rem;
+}
+
+#color-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 1rem;
+  display: flex;
+}
+
+#color-bar div {
+  height: 100%;
+  width: 100%;
+}
