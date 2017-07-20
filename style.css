@@ -43,8 +43,9 @@ h1 {
 }
 
 .message-box {
-  color: #ddd;
-  font-size: 0.5rem;
+  color: #999;
+  font-size: 0.7rem;
+  text-transform: uppercase;
 }
 
 #submit-button {
